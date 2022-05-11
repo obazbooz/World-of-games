@@ -1,4 +1,26 @@
+body {
+}
+
 .App {
   text-align: center;
 }
 
+/***************Header styling ***********/
+
+/***************Navigation styling ***********/
+.navigationContainer {
+  background-color: gray;
+  min-height: 70px;
+}
+
+/***************Body styling ***********/
+.bodyContainer {
+  background-color: rgba(7, 7, 7, 0.734);
+  min-height: 300px;
+}
+
+/***************Footer styling ***********/
+.footerContainer {
+  background-color: rgb(90, 244, 239);
+  min-height: 150px;
+}
