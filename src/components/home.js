@@ -6,19 +6,19 @@ import NavigationBar from './navigationBar';
 function Home() {
   return (
     <div>
-      <header className="headerContainer">
+      <div className="headerContainer">
         <h1>World of games</h1>
-      </header>
-      <nav className="navContainer">
+      </div>
+      <div className="navContainer">
         <NavigationBar />
-      </nav>
-      <body className="bodyContainer">
+      </div>
+      <div className="bodyContainer">
         <Games />
-      </body>
-      <footer className="footerContainer">
+      </div>
+      <div className="footerContainer">
         <FooterInfo />
         <FooterCopyright />
-      </footer>
+      </div>
     </div>
   );
 }
