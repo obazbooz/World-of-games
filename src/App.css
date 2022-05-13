@@ -15,8 +15,12 @@ body {
 
 /***************Body styling ***********/
 .bodyContainer {
-  background-color: rgba(7, 7, 7, 0.734);
   min-height: 300px;
+}
+
+.likeIcon {
+  width: 30px;
+  cursor: pointer;
 }
 
 /***************Footer styling ***********/
