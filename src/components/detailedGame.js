@@ -10,7 +10,9 @@ function DetailedGame() {
   const detailedGameDate = useFetchApi(gamesApiUrl, apiUrlParams);
   return (
     <div>
-      <NavigationBar />
+      <div className="headerNavContainer">
+        <NavigationBar />
+      </div>
       <h4>{detailedGameDate.title}</h4>
       <img
         src={detailedGameDate.thumbnail}

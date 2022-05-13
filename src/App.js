@@ -4,6 +4,7 @@ import FavoriteGames from './components/favoriteGames';
 import DetailedGame from './components/detailedGame';
 import { FavoriteGamesProvider } from './contexts/favoriteGameList';
 import './App.css';
+import SocialGames from './components/socialGames';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path="/games" element={<Home />} />
             <Route path="favorites" element={<FavoriteGames />} />
             <Route path="/games/:id" element={<DetailedGame />} />
+            <Route path="/socialGames" element={<SocialGames />} />
           </Routes>
         </Router>
       </FavoriteGamesProvider>

@@ -1,4 +1,9 @@
 body {
+  background-image: url(../public/images/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  min-height: 100%;
 }
 
 .App {
@@ -7,15 +12,44 @@ body {
 
 /***************Header styling ***********/
 
-/***************Navigation styling ***********/
-.navigationContainer {
-  background-color: gray;
-  min-height: 70px;
+.headerNavContainer {
+  background: #cecece
+    url(//oceanofgames.com/wp-content/themes/mystique/css/../images/bg-nav.png)
+    repeat-x center top;
+  border-top: 1px solid #fff;
+  width: 80%;
+  margin: 20px auto;
+  height: 75px;
+}
+
+.navHeaderContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow-wrap: break-word;
+  list-style-position: outside;
+  line-height: 150%;
+  width: 100%;
+}
+
+.navItem {
+  margin: 5px;
 }
 
 /***************Body styling ***********/
 .bodyContainer {
   min-height: 300px;
+  border-top: 1px solid #fff;
+  background: #fff
+    url(//oceanofgames.com/wp-content/themes/mystique/css/../images/bg-main-r.jpg)
+    no-repeat right top;
+  min-height: 700px;
+  position: relative;
+  width: 80%;
+  margin: auto;
 }
 
 .likeIcon {
