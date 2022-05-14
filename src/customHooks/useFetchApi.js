@@ -22,7 +22,7 @@ const useFetchApi = (url, apiUrlParams) => {
         console.log(error);
       }
     })();
-  }, [url,apiUrlParams]);
+  }, [apiUrlParams]);
 
   return data;
 };

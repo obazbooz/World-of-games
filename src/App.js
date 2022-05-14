@@ -1,23 +1,24 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './components/home';
-import FavoriteGames from './components/favoriteGames';
-import DetailedGame from './components/detailedGame';
+import HomePage from './components/homePage';
+import FavoritePage from './components/favoritePage';
+import DetailsGame from './components/detailsPage';
 import { FavoriteGamesProvider } from './contexts/favoriteGameList';
+import { SelectedCategoryProvider } from './contexts/selectedCategory';
 import './App.css';
-import SocialGames from './components/socialGames';
 
 function App() {
   return (
     <div className="App">
       <FavoriteGamesProvider>
-        <Router>
-          <Routes>
-            <Route path="/games" element={<Home />} />
-            <Route path="favorites" element={<FavoriteGames />} />
-            <Route path="/games/:id" element={<DetailedGame />} />
-            <Route path="/socialGames" element={<SocialGames />} />
-          </Routes>
-        </Router>
+        <SelectedCategoryProvider>
+          <Router>
+            <Routes>
+              <Route path="/home" element={<HomePage />} />
+              <Route path="/favorites" element={<FavoritePage />} />
+              <Route path="/games/:id" element={<DetailsGame />} />
+            </Routes>
+          </Router>
+        </SelectedCategoryProvider>
       </FavoriteGamesProvider>
     </div>
   );

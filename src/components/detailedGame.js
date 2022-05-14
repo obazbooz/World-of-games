@@ -1,18 +1,8 @@
 import React from 'react';
-import useFetchApi from '../customHooks/useFetchApi';
-import { useParams } from 'react-router-dom';
-import NavigationBar from './navigationBar';
 
-function DetailedGame() {
-  const { id } = useParams();
-  const gamesApiUrl = 'https://mmo-games.p.rapidapi.com/game';
-  const apiUrlParams = { id: `${id}` };
-  const detailedGameDate = useFetchApi(gamesApiUrl, apiUrlParams);
+function DetailedGame({ detailedGameDate }) {
   return (
-    <div>
-      <div className="headerNavContainer">
-        <NavigationBar />
-      </div>
+    <div className="bodyContainer">
       <h4>{detailedGameDate.title}</h4>
       <img
         src={detailedGameDate.thumbnail}
@@ -22,7 +12,7 @@ function DetailedGame() {
       <p>{detailedGameDate.genre}</p>
       <p>{detailedGameDate.platform}</p>
       <p>{detailedGameDate.developer}</p>
-      <p>{detailedGameDate.release_date}</p>=
+      <p>{detailedGameDate.release_date}</p>
       <p>{detailedGameDate.profile_url}</p>
     </div>
   );

@@ -1,65 +1,136 @@
-import React, { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { SelectedCategory } from '../contexts/selectedCategory';
 
 function NavigationBar() {
+  const { setSelectedCategory } = useContext(SelectedCategory);
   return (
-    <nav>
-      <ul className="navHeaderContent">
+    <nav className="navigationContainer">
+      <ul className="navListContainer">
         <li className="navItem">
-          <Link to={'/games'}>All games</Link>
+          <Link
+            id="homeNav"
+            to={'/home'}
+            onClick={() => {
+              setSelectedCategory('All');
+            }}
+          >
+            All games
+          </Link>
+        </li>
+
+        <li className="navItem">
+          <Link
+            to={'/home'}
+            onClick={() => {
+              setSelectedCategory('Social');
+            }}
+          >
+            Social games
+          </Link>
         </li>
         <li className="navItem">
-          <Link to={'/favorites'}>Favorites</Link>
+          <Link
+            to={'/home'}
+            onClick={() => {
+              setSelectedCategory('Card');
+            }}
+          >
+            Card Games
+          </Link>
         </li>
         <li className="navItem">
-          <Link to={'/socialGames'}>Social</Link>
+          <Link
+            to={'/home'}
+            onClick={() => {
+              setSelectedCategory('Shooter');
+            }}
+          >
+            Shooting Games
+          </Link>
         </li>
         <li className="navItem">
-          <Link to={'/favorites'}>Card Game</Link>
+          <Link
+            to={'/home'}
+            onClick={() => {
+              setSelectedCategory('Fighting');
+            }}
+          >
+            Fighting Games
+          </Link>
         </li>
         <li className="navItem">
-          <Link to={'/favorites'}>Shooter</Link>
+          <Link
+            to={'/home'}
+            onClick={() => {
+              setSelectedCategory('Strategy');
+            }}
+          >
+            Strategy Games
+          </Link>
         </li>
         <li className="navItem">
-          <Link to={'/favorites'}>MMORPG</Link>
+          <Link
+            to={'/home'}
+            onClick={() => {
+              setSelectedCategory('Racing');
+            }}
+          >
+            Racing Games
+          </Link>
         </li>
         <li className="navItem">
-          <Link to={'/favorites'}>MOBA</Link>
+          <Link
+            to={'/home'}
+            onClick={() => {
+              setSelectedCategory('Sports');
+            }}
+          >
+            Sports Games
+          </Link>
         </li>
         <li className="navItem">
-          <Link to={'/favorites'}>Fighting</Link>
+          <Link
+            to={'/home'}
+            onClick={() => {
+              setSelectedCategory('Fantasy');
+            }}
+          >
+            Fantasy Games
+          </Link>
         </li>
         <li className="navItem">
-          <Link to={'/favorites'}>Strategy</Link>
+          <Link
+            to={'/home'}
+            onClick={() => {
+              setSelectedCategory('Action');
+            }}
+          >
+            Action Games
+          </Link>
         </li>
         <li className="navItem">
-          <Link to={'/favorites'}>Racing</Link>
+          <Link
+            to={'/home'}
+            onClick={() => {
+              setSelectedCategory('PC');
+            }}
+          >
+            PC platform games
+          </Link>
         </li>
         <li className="navItem">
-          <Link to={'/favorites'}>Sports</Link>
+          <Link
+            to={'/home'}
+            onClick={() => {
+              setSelectedCategory('Browser');
+            }}
+          >
+            Web browser platform games
+          </Link>
         </li>
         <li className="navItem">
-          <Link to={'/favorites'}>Fantasy</Link>
-        </li>
-        <li className="navItem">
-          <Link to={'/favorites'}>MMO</Link>
-        </li>
-        <li className="navItem">
-          <Link to={'/favorites'}>Battle Royale</Link>
-        </li>
-        <li className="navItem">
-          <Link to={'/favorites'}>Action RPG</Link>
-        </li>
-        <li className="navItem">
-          <Link to={'/favorites'}>MMO</Link>
-        </li>
-        <li className="navItem">
-          <Link to={'/favorites'}>ARPG</Link>
-        </li>
-        <li className="navItem">
-          <Link to={'/favorites'}>Card</Link>
-        </li>
-        <li className="navItem">
-          <Link to={'/favorites'}>Favorites</Link>
+          <Link to={'/favorites'}>My favorites</Link>
         </li>
       </ul>
     </nav>

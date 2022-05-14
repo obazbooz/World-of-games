@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import heartRegular from '../icons/heartRegular.svg';
 import heartSolid from '../icons/heartSolid.svg';
 
-function Game({ game: { id, title, thumbnail, short_description } }) {
+function Game({
+  game: { id, title, thumbnail, short_description, release_date, publisher },
+}) {
   const { favorite, setFavorite } = useContext(FavoriteGamesList);
 
   const updateFavoriteList = (gameId) => {
@@ -27,8 +29,8 @@ function Game({ game: { id, title, thumbnail, short_description } }) {
   };
 
   return (
-    <li>
-      <div>
+    <li className="gameListItemContainer">
+      <div className="gameDetails">
         <img
           className="likeIcon"
           src={inFavorite(id) ? heartSolid : heartRegular}
@@ -37,15 +39,23 @@ function Game({ game: { id, title, thumbnail, short_description } }) {
             updateFavoriteList(id);
           }}
         />
-      </div>
-      <div>
-        <Link to={`/games/${id}`}>
-          <h4>{title}</h4>
-        </Link>
-        <Link to={`/games/${id}`}>
-          <img src={thumbnail} alt={'Product img is not available'} />
-        </Link>
-        <p>{short_description}</p>
+        <div>
+          <Link to={`/games/${id}`}>
+            <h4>{title}</h4>
+            <img src={thumbnail} alt={'Product img is not available'} />
+          </Link>
+          <div className="gameData">
+            <div className="gameYear">
+              <span>{release_date}</span>
+            </div>
+            <div className="gameCategories">
+              <span>{publisher}</span>
+            </div>
+          </div>
+          <div className="gameDesc">
+            <p>{short_description}</p>
+          </div>
+        </div>
       </div>
     </li>
   );
