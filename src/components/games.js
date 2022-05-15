@@ -6,16 +6,20 @@ import { SelectedCategory } from '../contexts/selectedCategory';
 function Games({ params }) {
   const { selectedCategory } = useContext(SelectedCategory);
   const gamesApiUrl = 'https://mmo-games.p.rapidapi.com/games';
-  // const apiUrlParams = {};
   const allGames = useFetchApi(gamesApiUrl, params);
   return (
     <div className="bodyContainer">
       <div className="bodyHeaderContainer">
         <div>
-          <h1>{selectedCategory} games</h1>
+          <h2>{selectedCategory} games</h2>
         </div>
-        <div>
-          <input />
+        <div className="searchFormContainer">
+          <form>
+            <input className="submit" type={'submit'} />
+            <fieldset>
+              <input className="search" type={'text'} />
+            </fieldset>
+          </form>
         </div>
       </div>
       <ul className="gamesContainer">

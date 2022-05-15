@@ -31,24 +31,32 @@ function Game({
   return (
     <li className="gameListItemContainer">
       <div className="gameDetails">
-        <img
-          className="likeIcon"
-          src={inFavorite(id) ? heartSolid : heartRegular}
-          alt={`like icon not available!`}
-          onClick={() => {
-            updateFavoriteList(id);
-          }}
-        />
         <div>
-          <Link to={`/games/${id}`}>
-            <h4>{title}</h4>
-            <img src={thumbnail} alt={'Product img is not available'} />
+          <Link className="detailsGameLink" to={`/games/${id}`}>
+            <img
+              id="gameImage"
+              src={thumbnail}
+              alt={'Product img is not available'}
+            />
           </Link>
+          <div id="titleLikedIconContainer">
+            <Link className="detailsGameLink" to={`/games/${id}`}>
+              <h4 id="gameTitle">{title}</h4>
+            </Link>
+            <img
+              className="likeIcon"
+              src={inFavorite(id) ? heartSolid : heartRegular}
+              alt={`like icon not available!`}
+              onClick={() => {
+                updateFavoriteList(id);
+              }}
+            />
+          </div>
           <div className="gameData">
             <div className="gameYear">
               <span>{release_date}</span>
             </div>
-            <div className="gameCategories">
+            <div className="gameInformation">
               <span>{publisher}</span>
             </div>
           </div>

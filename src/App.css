@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'ModernWarfare-OV7KP';
+  src: url('../public/fonts/ModernWarfare-OV7KP.ttf') format('truetype');
+}
+
 body {
   background-image: url(../public/images/background.jpg);
   background-repeat: no-repeat;
@@ -11,6 +16,19 @@ body {
 }
 
 /***************Header styling ***********/
+
+.headerTitleContainer {
+  margin: 50px;
+  font-family: ModernWarfare-OV7KP;
+  color: #f9de1a;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #ed4848, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+    1px 7px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
 
 .navigationContainer {
   background: #cecece
@@ -87,15 +105,19 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* overflow-wrap: break-word; */
 }
 
 .bodyHeaderContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px;
+  margin: auto;
+  width: 93%;
 }
+.bodyHeaderContainer h2 {
+  font-size: x-large;
+}
+
 .bodyHeaderContainer h1 {
   margin: 0.25em 0 0.5em;
   font-size: 300%;
@@ -105,9 +127,15 @@ body {
   letter-spacing: -1px;
 }
 
-.likeIcon {
-  width: 30px;
-  cursor: pointer;
+.searchFormContainer {
+  overflow: hidden;
+  margin: 0;
+}
+
+.submit {
+}
+
+.search {
 }
 
 .gameListItemContainer {
@@ -116,9 +144,90 @@ body {
   margin: 0 0 40px;
   padding: 15px;
   text-align: justify;
-  width: 60%;
+  width: 95%;
+  min-height: 230px;
 }
 
+#titleLikedIconContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.likeIcon {
+  width: 30px;
+  cursor: pointer;
+  float: right;
+}
+
+#gameImage {
+  float: left;
+  margin-right: 10px;
+  width: 400px;
+}
+
+#gameTitle {
+  margin: 0;
+  padding: 0 46px 5px 0;
+  font-size: 170%;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: normal;
+}
+
+.detailsGameLink {
+  text-decoration: none;
+}
+
+.gameData {
+  overflow: hidden;
+}
+
+.gameYear {
+  background: transparent
+    url(//oceanofgames.com/wp-content/themes/mystique/css/../images/post-std.png)
+    no-repeat left -42px;
+  padding-left: 10px;
+  float: left;
+}
+
+.gameYear span {
+  background: transparent
+    url(//oceanofgames.com/wp-content/themes/mystique/css/../images/post-std.png)
+    no-repeat right -42px;
+  padding: 0 15px 0 0;
+  height: 42px;
+  line-height: 32px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  float: none;
+}
+
+.gameInformation {
+  background: transparent
+    url(//oceanofgames.com/wp-content/themes/mystique/css/../images/post-std.png)
+    no-repeat right top;
+  height: 42px;
+  line-height: 32px;
+  display: block;
+  padding-left: 10px;
+  overflow: hidden;
+  color: #bbb;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.gameInformation span {
+  font-weight: 700;
+  color: #999;
+}
+
+.gameDesc {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
 /***************Footer styling ***********/
 .footerContainer {
   background-color: rgb(90, 244, 239);
