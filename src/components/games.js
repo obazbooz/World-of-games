@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import Game from './game';
 import useFetchApi from '../customHooks/useFetchApi';
 import { SelectedCategory } from '../contexts/selectedCategory';
+import SearchBar from './searchBar';
 
 function Games({ params }) {
   const { selectedCategory } = useContext(SelectedCategory);
@@ -13,18 +14,11 @@ function Games({ params }) {
         <div>
           <h2>{selectedCategory} games</h2>
         </div>
-        <div className="searchFormContainer">
-          <form>
-            <input className="submit" type={'submit'} />
-            <fieldset>
-              <input className="search" type={'text'} />
-            </fieldset>
-          </form>
-        </div>
+        <SearchBar />
       </div>
       <ul className="gamesContainer">
         {allGames.map((game, index) => (
-          <div key={index}>
+          <div className="gameContainer" key={index}>
             <Game game={game} />
           </div>
         ))}

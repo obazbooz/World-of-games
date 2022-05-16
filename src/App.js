@@ -4,6 +4,9 @@ import FavoritePage from './components/favoritePage';
 import DetailsGame from './components/detailsPage';
 import { FavoriteGamesProvider } from './contexts/favoriteGameList';
 import { SelectedCategoryProvider } from './contexts/selectedCategory';
+import { SearchTermGameProvider } from './contexts/searchTermGame';
+import { FilteredGamesProvider } from './contexts/filteredGames';
+import { IsSearchedProvider } from './contexts/isSearchedHitted';
 import './App.css';
 
 function App() {
@@ -11,13 +14,19 @@ function App() {
     <div className="App">
       <FavoriteGamesProvider>
         <SelectedCategoryProvider>
-          <Router>
-            <Routes>
-              <Route path="/home" element={<HomePage />} />
-              <Route path="/favorites" element={<FavoritePage />} />
-              <Route path="/games/:id" element={<DetailsGame />} />
-            </Routes>
-          </Router>
+          <SearchTermGameProvider>
+            <FilteredGamesProvider>
+              <IsSearchedProvider>
+                <Router>
+                  <Routes>
+                    <Route path="/home" element={<HomePage />} />
+                    <Route path="/favorites" element={<FavoritePage />} />
+                    <Route path="/games/:id" element={<DetailsGame />} />
+                  </Routes>
+                </Router>
+              </IsSearchedProvider>
+            </FilteredGamesProvider>
+          </SearchTermGameProvider>
         </SelectedCategoryProvider>
       </FavoriteGamesProvider>
     </div>

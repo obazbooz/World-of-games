@@ -3,8 +3,16 @@ import Header from './header';
 import Games from './games';
 import Footer from './footer';
 import { SelectedCategory } from '../contexts/selectedCategory';
+import { SearchTermGame } from '../contexts/searchTermGame';
+import { FilteredGamesList } from '../contexts/filteredGames';
+import { IsSearchedContext } from '../contexts/isSearchedHitted';
+import SearchedGames from './searchedGames';
 
 function HomePage() {
+  const { searchTerm, setSearchTerm } = useContext(SearchTermGame);
+  const { filteredGames, setFilteredGames } = useContext(FilteredGamesList);
+  const { isSearched, setIsSearched } = useContext(IsSearchedContext);
+
   const allGamesApiParams = {};
   const socialGamesApiParams = { category: 'Social' };
   const cardGamesApiParams = { category: 'card' };
@@ -18,11 +26,10 @@ function HomePage() {
   const pcGamesApiParams = { platform: 'pc' };
   const browserGamesApiParams = { platform: 'browser' };
   const { selectedCategory } = useContext(SelectedCategory);
-  console.log(selectedCategory);
   return (
     <div>
       <Header />
-      {
+      {!isSearched ? (
         {
           All: <Games params={allGamesApiParams} />,
           Social: <Games params={socialGamesApiParams} />,
@@ -37,7 +44,9 @@ function HomePage() {
           PC: <Games params={pcGamesApiParams} />,
           Browser: <Games params={browserGamesApiParams} />,
         }[selectedCategory]
-      }
+      ) : (
+        <SearchedGames filteredGames={filteredGames} />
+      )}
       <Footer />
     </div>
   );

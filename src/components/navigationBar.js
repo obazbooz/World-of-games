@@ -1,9 +1,11 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { SelectedCategory } from '../contexts/selectedCategory';
+import { IsSearchedContext } from '../contexts/isSearchedHitted';
 
 function NavigationBar() {
   const { setSelectedCategory } = useContext(SelectedCategory);
+  const { isSearched, setIsSearched } = useContext(IsSearchedContext);
   return (
     <nav className="navigationContainer">
       <ul className="navListContainer">
@@ -13,6 +15,7 @@ function NavigationBar() {
             to={'/home'}
             onClick={() => {
               setSelectedCategory('All');
+              setIsSearched(false);
             }}
           >
             All games
@@ -24,6 +27,7 @@ function NavigationBar() {
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Social');
+              setIsSearched(false);
             }}
           >
             Social games
@@ -34,6 +38,7 @@ function NavigationBar() {
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Card');
+              setIsSearched(false);
             }}
           >
             Card Games
@@ -44,6 +49,7 @@ function NavigationBar() {
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Shooter');
+              setIsSearched(false);
             }}
           >
             Shooting Games
@@ -54,6 +60,7 @@ function NavigationBar() {
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Fighting');
+              setIsSearched(false);
             }}
           >
             Fighting Games
@@ -64,6 +71,7 @@ function NavigationBar() {
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Strategy');
+              setIsSearched(false);
             }}
           >
             Strategy Games
@@ -74,6 +82,7 @@ function NavigationBar() {
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Racing');
+              setIsSearched(false);
             }}
           >
             Racing Games
@@ -84,6 +93,7 @@ function NavigationBar() {
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Sports');
+              setIsSearched(false);
             }}
           >
             Sports Games
@@ -94,6 +104,7 @@ function NavigationBar() {
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Fantasy');
+              setIsSearched(false);
             }}
           >
             Fantasy Games
@@ -104,6 +115,7 @@ function NavigationBar() {
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Action');
+              setIsSearched(false);
             }}
           >
             Action Games
@@ -114,6 +126,7 @@ function NavigationBar() {
             to={'/home'}
             onClick={() => {
               setSelectedCategory('PC');
+              setIsSearched(false);
             }}
           >
             PC platform games
@@ -124,6 +137,7 @@ function NavigationBar() {
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Browser');
+              setIsSearched(false);
             }}
           >
             Web browser platform games
