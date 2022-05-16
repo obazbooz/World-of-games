@@ -15,8 +15,8 @@ function DetailsGame() {
       <div className="headerNavContainer">
         <Header />
       </div>
-        <DetailedGame detailedGameDate={detailedGameDate} />
-        <Footer/>
+      <DetailedGame detailedGameDate={detailedGameDate} />
+      <Footer />
     </div>
   );
 }

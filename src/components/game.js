@@ -29,40 +29,38 @@ function Game({
   };
 
   return (
-    <li className="gameListItemContainer">
-      <div className="gameDetails">
-        <div>
-          <Link className="detailsGameLink" to={`/games/${id}`}>
-            <img
-              id="gameImage"
-              src={thumbnail}
-              alt={'Product img is not available'}
-            />
+    <li className="gameItem">
+      <div>
+        <Link to={`/games/${id}`}>
+          <img
+            id="gamePoster"
+            src={thumbnail}
+            alt={'Product img is not available'}
+          />
+        </Link>
+        <div className="titleLikeIconContainer">
+          <Link to={`/games/${id}`}>
+            <h4 id="gameTitle">{title}</h4>
           </Link>
-          <div id="titleLikedIconContainer">
-            <Link className="detailsGameLink" to={`/games/${id}`}>
-              <h4 id="gameTitle">{title}</h4>
-            </Link>
-            <img
-              className="likeIcon"
-              src={inFavorite(id) ? heartSolid : heartRegular}
-              alt={`like icon not available!`}
-              onClick={() => {
-                updateFavoriteList(id);
-              }}
-            />
+          <img
+            className="likeIcon"
+            src={inFavorite(id) ? heartSolid : heartRegular}
+            alt={`like icon not available!`}
+            onClick={() => {
+              updateFavoriteList(id);
+            }}
+          />
+        </div>
+        <div className="gameBriefData">
+          <div className="gameReleaseYear">
+            <span>{release_date}</span>
           </div>
-          <div className="gameData">
-            <div className="gameYear">
-              <span>{release_date}</span>
-            </div>
-            <div className="gameInformation">
-              <span>{publisher}</span>
-            </div>
+          <div className="gamePublisher">
+            <span>{publisher}</span>
           </div>
-          <div className="gameDesc">
-            <p>{short_description}</p>
-          </div>
+        </div>
+        <div className="gameShortDesc">
+          <p>{short_description}</p>
         </div>
       </div>
     </li>

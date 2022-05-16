@@ -3,22 +3,21 @@ import Game from './game';
 import useFetchApi from '../customHooks/useFetchApi';
 import { SelectedCategory } from '../contexts/selectedCategory';
 import SearchBar from './searchBar';
+import CategoryTitle from './CategoryTitle';
 
 function Games({ params }) {
   const { selectedCategory } = useContext(SelectedCategory);
   const gamesApiUrl = 'https://mmo-games.p.rapidapi.com/games';
   const allGames = useFetchApi(gamesApiUrl, params);
   return (
-    <div className="bodyContainer">
-      <div className="bodyHeaderContainer">
-        <div>
-          <h2>{selectedCategory} games</h2>
-        </div>
+    <div className="gameContainer">
+      <div className="gamesHeaderContainer">
+        <CategoryTitle selectedCategory={selectedCategory} />
         <SearchBar />
       </div>
-      <ul className="gamesContainer">
+      <ul className="gamesBodyContainer">
         {allGames.map((game, index) => (
-          <div className="gameContainer" key={index}>
+          <div className="game" key={index}>
             <Game game={game} />
           </div>
         ))}
