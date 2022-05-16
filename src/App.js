@@ -19,7 +19,7 @@ function App() {
               <IsSearchedProvider>
                 <Router>
                   <Routes>
-                    <Route path="/home" element={<HomePage />} />
+                    <Route path="/" element={<HomePage />} />
                     <Route path="/favorites" element={<FavoritePage />} />
                     <Route path="/games/:id" element={<DetailsGame />} />
                   </Routes>
