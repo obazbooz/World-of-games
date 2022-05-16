@@ -1,4 +1,332 @@
+@font-face {
+  font-family: 'ModernWarfare-OV7KP';
+  src: url('../public/fonts/ModernWarfare-OV7KP.ttf') format('truetype');
+}
+
+body {
+  background-image: url(../public/images/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
 
+/***************Header styling ***********/
+
+.headerTitleContainer {
+  margin: 50px;
+  font-family: ModernWarfare-OV7KP;
+  color: #f9de1a;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #ed4848, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+    1px 7px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+.navigationContainer {
+  background: #cecece
+    url(//oceanofgames.com/wp-content/themes/mystique/css/../images/bg-nav.png)
+    repeat-x center top;
+  border-top: 1px solid #fff;
+  width: 80%;
+  margin: 20px auto;
+  /* min-height: 55px; */
+}
+
+.navListContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow-wrap: break-word;
+  list-style-position: outside;
+  line-height: 150%;
+  width: 100%;
+}
+
+.navItem {
+  background: transparent
+    url(//oceanofgames.com/wp-content/themes/mystique/css/../images/nav-div.png)
+    repeat-y right top;
+  padding-right: 2px;
+  border-top: 1px solid #fff;
+  margin-top: -1px;
+}
+
+.homeLink {
+  background: transparent
+    url(//oceanofgames.com/wp-content/themes/mystique/css/../images/icons.png)
+    no-repeat -47px -59px;
+  color: black;
+  font-size: 14px;
+  padding: 4px 15px 2px 35px;
+  text-decoration: none;
+  font-weight: 700;
+  text-shadow: 0px 1px 1px #fff;
+}
+
+.homeLink:hover {
+  color: #2d8ac7;
+  text-shadow: none;
+}
+
+.categoryLink {
+  color: #4e4e4e;
+  font-size: 14px;
+  padding: 4px 15px 2px;
+  text-decoration: none;
+  font-weight: 700;
+  text-shadow: 0px 1px 1px #fff;
+}
+
+.categoryLink:hover {
+  color: #2d8ac7;
+  text-shadow: none;
+}
+
+.selectedCategoryStyle {
+  background-color: black;
+  text-shadow: none;
+  color: white;
+}
+
+.unselectedCategoryStyle {
+  background-color: #dfdfdf;
+  color: #4e4e4e;
+}
+/***************Body styling ***********/
+
+.gameContainer {
+  min-height: 300px;
+  border-top: 1px solid #fff;
+  background: #fff
+    url(//oceanofgames.com/wp-content/themes/mystique/css/../images/bg-main-r.jpg)
+    no-repeat right top;
+  min-height: 300px;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.gamesHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 93%;
+}
+
+.gamesBodyContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 25px auto 0px auto;
+  padding: 10px;
+}
+
+.gamesHeaderContainer h1 {
+  margin: 0.25em 0 0.5em;
+  font-size: 300%;
+  font-weight: 700;
+  text-shadow: #fff 1px 1px 1px;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+
+.gamesHeaderContainer h2 {
+  font-size: x-large;
+}
+
+.searchFormContainer {
+  overflow: hidden;
+  margin: 0;
+}
+
+.game {
+  width: 100%;
+}
+
+.gameItem {
+  list-style: none;
+  border: 2px solid;
+  margin: 0 10px 20px;
+  padding: 15px;
+  text-align: justify;
+  width: 95%;
+  min-height: 230px;
+}
+
+#gamePoster {
+  float: left;
+  margin-right: 10px;
+  width: 400px;
+}
+
+#detailedGamePoster {
+  width: 200px;
+}
+
+.titleLikeIconContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#gameTitle {
+  margin: 0;
+  padding: 0 46px 5px 0;
+  font-size: 170%;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: normal;
+}
+
+#detailedGameTitle {
+  font-size: 50px;
+  margin-top: 0;
+}
+
+.likeIcon {
+  width: 30px;
+  cursor: pointer;
+  float: right;
+}
+
+.gameBriefData {
+  overflow: hidden;
+}
+
+.gameReleaseYear {
+  background: transparent
+    url(//oceanofgames.com/wp-content/themes/mystique/css/../images/post-std.png)
+    no-repeat left -42px;
+  padding-left: 10px;
+  float: left;
+}
+
+.gameReleaseYear span {
+  background: transparent
+    url(//oceanofgames.com/wp-content/themes/mystique/css/../images/post-std.png)
+    no-repeat right -42px;
+  padding: 0 15px 0 0;
+  height: 42px;
+  line-height: 32px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  float: none;
+}
+
+.gamePublisher {
+  background: transparent
+    url(//oceanofgames.com/wp-content/themes/mystique/css/../images/post-std.png)
+    no-repeat right top;
+  height: 42px;
+  line-height: 32px;
+  display: block;
+  padding-left: 10px;
+  overflow: hidden;
+  color: #bbb;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.gamePublisher span {
+  font-weight: 700;
+  color: #999;
+}
+
+.gameShortDesc {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+/***************Footer styling ***********/
+.footerContainer {
+  width: 80%;
+  margin: auto;
+}
+
+.footerInfoListContainer {
+  background: #eee;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
+}
+
+.footerInfoListContainer li {
+  margin-left: 10px;
+  padding: 10px 0;
+}
+
+.footerInfoListContainer li a {
+  color: #666;
+  font-size: 85%;
+  font-weight: 700;
+  padding: 4px 10px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.footerInfoListContainer li a:hover {
+  color: #2d8ac7;
+}
+
+.footerCopyrightsContainer {
+  background: #ddd;
+}
+
+.copyRights {
+  background: #cdcdcd;
+  padding: 1em 0;
+  font-size: 110%;
+  line-height: 150%;
+  text-align: center;
+  text-shadow: 0px 1px 1px #fff;
+}
+
+/**********************************/
+
+.toUpBtn {
+  font-weight: 700;
+  position: fixed;
+  bottom: 0px;
+  right: 40px;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+}
+
+.toUpBtn:hover {
+  color: #2d8ac7;
+}
+
+.toUpVisible {
+  opacity: 1;
+  transition: 1s;
+}
+
+.toUpNotVisible {
+  opacity: 0;
+  transition: 1s;
+}
