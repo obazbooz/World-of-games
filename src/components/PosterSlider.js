@@ -1,15 +1,21 @@
-function PosterSlider({ screenshots }) {
+function PosterSlider({ detailedGameDate }) {
+  console.log(detailedGameDate.screenshots);
   return (
     <div>
-      {screenshots.map((shot, index) => {
-        return (
-          <img
-            id="detailedGamePoster"
-            src={shot.image}
-            alt={'Game poster is not available'}
-          />
-        );
-      })}
+      {detailedGameDate.screenshots !== undefined ? (
+        detailedGameDate.screenshots.map((shot, index) => {
+          return (
+            <img
+              key={index}
+              id="detailedGamePoster"
+              src={shot.image}
+              alt={'Game poster is not available'}
+            />
+          );
+        })
+      ) : (
+        <></>
+      )}
     </div>
   );
 }
