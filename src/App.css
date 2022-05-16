@@ -9,6 +9,8 @@ body {
   background-attachment: fixed;
   height: 100%;
   min-height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
@@ -110,7 +112,7 @@ body {
   background: #fff
     url(//oceanofgames.com/wp-content/themes/mystique/css/../images/bg-main-r.jpg)
     no-repeat right top;
-  min-height: 700px;
+  min-height: 300px;
   position: relative;
   width: 80%;
   margin: auto;
@@ -120,6 +122,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 25px auto 0px auto;
+  padding: 10px;
 }
 
 .bodyHeaderContainer {
@@ -160,7 +164,7 @@ body {
 .gameListItemContainer {
   list-style: none;
   border: 2px solid;
-  margin: 0 0 40px;
+  margin: 0 10px 20px;
   padding: 15px;
   text-align: justify;
   width: 95%;
@@ -249,6 +253,78 @@ body {
 }
 /***************Footer styling ***********/
 .footerContainer {
-  background-color: rgb(90, 244, 239);
-  min-height: 150px;
+  width: 80%;
+  margin: auto;
+}
+
+.footerInfoListContainer {
+  background: #eee;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
+}
+
+.footerInfoListContainer li {
+  margin-left: 10px;
+  padding: 10px 0;
+}
+
+.footerInfoListContainer li a {
+  color: #666;
+  font-size: 85%;
+  font-weight: 700;
+  padding: 4px 10px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.footerInfoListContainer li a:hover {
+  color: #2d8ac7;
+}
+
+.footerCopyrightsContainer {
+  background: #ddd;
+}
+
+.copyRights {
+  background: #cdcdcd;
+  padding: 1em 0;
+  font-size: 110%;
+  line-height: 150%;
+  text-align: center;
+  text-shadow: 0px 1px 1px #fff;
+}
+
+/**********************************/
+
+.toUpBtn {
+  font-weight: 700;
+  position: fixed;
+  bottom: 0px;
+  right: 40px;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+}
+
+.toUpBtn:hover {
+  color: #2d8ac7;
+}
+
+.toUpVisible {
+  opacity: 1;
+  transition: 1s;
+}
+
+.toUpNotVisible {
+  opacity: 0;
+  transition: 1s;
 }

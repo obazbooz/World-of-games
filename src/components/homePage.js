@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import Header from './header';
 import Games from './games';
 import Footer from './footer';
+import ScrollToUP from './ScrollToTop';
 import { SelectedCategory } from '../contexts/selectedCategory';
 import { SearchTermGame } from '../contexts/searchTermGame';
 import { FilteredGamesList } from '../contexts/filteredGames';
@@ -48,6 +49,7 @@ function HomePage() {
         <SearchedGames filteredGames={filteredGames} />
       )}
       <Footer />
+      <ScrollToUP />
     </div>
   );
 }
