@@ -4,14 +4,19 @@ import { SelectedCategory } from '../contexts/selectedCategory';
 import { IsSearchedContext } from '../contexts/isSearchedHitted';
 
 function NavigationBar() {
-  const { setSelectedCategory } = useContext(SelectedCategory);
+  const { selectedCategory, setSelectedCategory } =
+    useContext(SelectedCategory);
   const { isSearched, setIsSearched } = useContext(IsSearchedContext);
   return (
     <nav className="navigationContainer">
       <ul className="navListContainer">
         <li className="navItem">
           <Link
-            id="homeNav"
+            className={` homeLink ${
+              selectedCategory === 'All'
+                ? 'selectedCategoryStyle'
+                : 'unselectedCategoryStyle'
+            }`}
             to={'/home'}
             onClick={() => {
               setSelectedCategory('All');
@@ -24,6 +29,11 @@ function NavigationBar() {
 
         <li className="navItem">
           <Link
+            className={` categoryLink ${
+              selectedCategory === 'Social'
+                ? 'selectedCategoryStyle'
+                : 'unselectedCategoryStyle'
+            }`}
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Social');
@@ -35,6 +45,11 @@ function NavigationBar() {
         </li>
         <li className="navItem">
           <Link
+            className={` categoryLink ${
+              selectedCategory === 'Card'
+                ? 'selectedCategoryStyle'
+                : 'unselectedCategoryStyle'
+            }`}
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Card');
@@ -46,6 +61,11 @@ function NavigationBar() {
         </li>
         <li className="navItem">
           <Link
+            className={` categoryLink ${
+              selectedCategory === 'Shooter'
+                ? 'selectedCategoryStyle'
+                : 'unselectedCategoryStyle'
+            }`}
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Shooter');
@@ -57,6 +77,11 @@ function NavigationBar() {
         </li>
         <li className="navItem">
           <Link
+            className={` categoryLink ${
+              selectedCategory === 'Fighting'
+                ? 'selectedCategoryStyle'
+                : 'unselectedCategoryStyle'
+            }`}
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Fighting');
@@ -68,6 +93,11 @@ function NavigationBar() {
         </li>
         <li className="navItem">
           <Link
+            className={` categoryLink ${
+              selectedCategory === 'Strategy'
+                ? 'selectedCategoryStyle'
+                : 'unselectedCategoryStyle'
+            }`}
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Strategy');
@@ -79,6 +109,11 @@ function NavigationBar() {
         </li>
         <li className="navItem">
           <Link
+            className={` categoryLink ${
+              selectedCategory === 'Racing'
+                ? 'selectedCategoryStyle'
+                : 'unselectedCategoryStyle'
+            }`}
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Racing');
@@ -90,6 +125,11 @@ function NavigationBar() {
         </li>
         <li className="navItem">
           <Link
+            className={` categoryLink ${
+              selectedCategory === 'Sports'
+                ? 'selectedCategoryStyle'
+                : 'unselectedCategoryStyle'
+            }`}
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Sports');
@@ -101,6 +141,11 @@ function NavigationBar() {
         </li>
         <li className="navItem">
           <Link
+            className={` categoryLink ${
+              selectedCategory === 'Fantasy'
+                ? 'selectedCategoryStyle'
+                : 'unselectedCategoryStyle'
+            }`}
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Fantasy');
@@ -112,6 +157,11 @@ function NavigationBar() {
         </li>
         <li className="navItem">
           <Link
+            className={` categoryLink ${
+              selectedCategory === 'Action'
+                ? 'selectedCategoryStyle'
+                : 'unselectedCategoryStyle'
+            }`}
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Action');
@@ -123,6 +173,11 @@ function NavigationBar() {
         </li>
         <li className="navItem">
           <Link
+            className={` categoryLink ${
+              selectedCategory === 'PC'
+                ? 'selectedCategoryStyle'
+                : 'unselectedCategoryStyle'
+            }`}
             to={'/home'}
             onClick={() => {
               setSelectedCategory('PC');
@@ -134,6 +189,11 @@ function NavigationBar() {
         </li>
         <li className="navItem">
           <Link
+            className={` categoryLink ${
+              selectedCategory === 'Browser'
+                ? 'selectedCategoryStyle'
+                : 'unselectedCategoryStyle'
+            }`}
             to={'/home'}
             onClick={() => {
               setSelectedCategory('Browser');
@@ -144,7 +204,20 @@ function NavigationBar() {
           </Link>
         </li>
         <li className="navItem">
-          <Link to={'/favorites'}>My favorites</Link>
+          <Link
+            className={` categoryLink ${
+              selectedCategory === 'favorites'
+                ? 'selectedCategoryStyle'
+                : 'unselectedCategoryStyle'
+            }`}
+            to={'/favorites'}
+            onClick={() => {
+              setSelectedCategory('favorites');
+              setIsSearched(false);
+            }}
+          >
+            My favorites
+          </Link>
         </li>
       </ul>
     </nav>
