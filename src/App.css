@@ -4,9 +4,12 @@
 }
 
 body {
-  background-image: url(../public/images/background.jpg);
+  /* background-image: url(../public/images/background.jpg); */
+  background-image: url('http://oceanofgames.com/wp-content/uploads/2013/08/alabg_7.jpg');
+  background-position-x: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: black;
   height: 100%;
   min-height: 100%;
   margin: 0;
@@ -37,7 +40,7 @@ body {
     url(//oceanofgames.com/wp-content/themes/mystique/css/../images/bg-nav.png)
     repeat-x center top;
   border-top: 1px solid #fff;
-  width: 80%;
+  width: 70%;
   margin: 20px auto;
   /* min-height: 55px; */
 }
@@ -115,7 +118,7 @@ body {
     no-repeat right top;
   min-height: 300px;
   position: relative;
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 
@@ -132,7 +135,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 25px auto 0px auto;
-  padding: 10px;
+  padding: 1%;
 }
 
 .gamesHeaderContainer h1 {
@@ -171,10 +174,6 @@ body {
   float: left;
   margin-right: 10px;
   width: 400px;
-}
-
-#detailedGamePoster {
-  width: 200px;
 }
 
 .titleLikeIconContainer {
@@ -253,9 +252,108 @@ body {
   text-align: justify;
 }
 
+#noFavoriteItems {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gameDetailsContainer {
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 50px 0px 0px;
+}
+
+.gameDetailsInfo {
+  width: 40%;
+  align-self: start;
+  max-width: 700px;
+  min-height: 300px;
+  margin: 100px auto 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gameDetailsSysReq {
+  width: 40%;
+  align-self: start;
+  max-width: 700px;
+  min-height: 300px;
+  margin: 100px auto 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/********/
+.posterSliderContainer {
+  max-width: 700px;
+  height: 300px;
+  margin: 100px auto 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.detailedGamePoster {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* opacity: 0; */
+  transition: opacity ease-in-out 0.4s;
+}
+
+#detailedGamePosterImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.posterActive {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+}
+.posterDeactivate {
+  opacity: 0;
+}
+
+.btnSlider {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  border: 1px solid rgba(34, 34, 34, 0.287);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.nextPosterBtn {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-60%);
+}
+.prevPosterBtn {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-60%);
+}
+
 /***************Footer styling ***********/
 .footerContainer {
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 

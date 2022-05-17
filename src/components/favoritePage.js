@@ -15,21 +15,24 @@ function FavoriteGames() {
   return (
     <div>
       <Header />
-      {favorite.length === 0 ? (
-        <div className="bodyContainer">
-          <p>No games in the favorites list yet.</p>
-        </div>
-      ) : (
-        <div className="bodyContainer">
-          <ul>
-            {favoriteProductData.map((game, index) => (
-              <div key={index}>
-                <Game game={game} />
-              </div>
-            ))}
-          </ul>
-        </div>
-      )}
+      <div className="gameContainer">
+        {favorite.length === 0 ? (
+          <div>
+            <p id="noFavoriteItems">No games in the favorites list yet.</p>
+          </div>
+        ) : (
+          <div>
+            <ul className="gamesBodyContainer">
+              {favoriteProductData.map((game, index) => (
+                <div key={index}>
+                  <Game game={game} />
+                </div>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+
       <Footer />
     </div>
   );
