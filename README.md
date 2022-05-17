@@ -11,10 +11,11 @@
 
 <h2>:bookmark_tabs:  3.APPLICATION DESCRIPTION:</h2>
  ## -Wrold of games is a simple react application helps you to search for games throuth out an ocean of games.
+ 
  ## -This application helps you to get to know more information about a big variety of games.
+ 
  ## -In addition to that, you can find a direct downloading link to each game.
-
-
+ 
 
 <h2>:deciduous_tree:  4.DIRECTORY TREE:</h2>
  ## -You can filter the games that you want based on the games categories such shooting games , card games etc..  
