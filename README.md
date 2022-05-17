@@ -100,7 +100,7 @@
 3. Start the application: ` npm start ` 
 
 
-## :paw_prints:7.PS:
+## :paw_prints:7.MORE INFO:
 * This application has been built for studying porpuses.
 * It's a clon of a website called Ocean of games.
 * Check it out http://oceanofgames.com/
