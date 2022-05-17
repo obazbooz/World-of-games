@@ -11,13 +11,12 @@
 
 <h2>:electric_plug: 4. Installing:</h2>
 
-<h2>Produced by:</h2>
+<h2>:shipit:Produced by:</h2>
 
-<h2>Contributing:</h2>
+<h2>:raising_hand:Contributing:</h2>
 
-<h2>License</h2>
+<h2>:heavy_check_mark:License:</h2>
 
-  
-  <p>By using this application you will be able to get a lot of information about many games such as 
-     game detals poster and download link</p>
-Directory 
+<h2>:sparkling_heart:Support me:</h2>
+
+
