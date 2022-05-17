@@ -2,19 +2,19 @@ function FooterInfo() {
   return (
     <ul className="footerInfoListContainer">
       <li>
-        <a href="#">Terms of conditions</a>
+        <a href="#Terms">Terms of conditions</a>
       </li>
       <li>
-        <a href="#">Privacy Policy </a>
+        <a href="#Privacy">Privacy Policy </a>
       </li>
       <li>
-        <a href="#">About Us</a>
+        <a href="#AboutUs">About Us</a>
       </li>
       <li>
-        <a href="#">Sitemap</a>
+        <a href="#Sitemap">Sitemap</a>
       </li>
       <li>
-        <a href="#">Contact Us</a>
+        <a href="#ContactUs">Contact Us</a>
       </li>
     </ul>
   );
