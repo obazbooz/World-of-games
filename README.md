@@ -26,6 +26,72 @@
 
 
 ## :deciduous_tree:5.DIRECTORY TREE:
+```
+.
+├── package.json
+├── package-lock.json
+├── public
+│   ├── favicon.ico
+│   ├── fonts
+│   │   └── ModernWarfare-OV7KP.ttf
+│   ├── images
+│   │   ├── background.jpg
+│   │   ├── bg-main.jpg
+│   │   └── mainPoster.jpg
+│   ├── index.html
+│   ├── isloading.gif
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+├── README.md
+└── src
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── components
+    │   ├── footers
+    │   │   ├── FooterCopyright.js
+    │   │   ├── FooterInfo.js
+    │   │   └── Footer.js
+    │   ├── games
+    │   │   ├── CategoryTitle.js
+    │   │   ├── DetailedGame.js
+    │   │   ├── Game.js
+    │   │   ├── Games.js
+    │   │   ├── ScrollToTop.js
+    │   │   ├── SearchBar.js
+    │   │   └── SearchedGames.js
+    │   ├── headers
+    │   │   ├── Header.js
+    │   │   ├── MainTitle.js
+    │   │   └── NavigationBar.js
+    │   ├── pages
+    │   │   ├── DetailsPage.js
+    │   │   ├── FavoritePage.js
+    │   │   └── HomePage.js
+    │   └── sliders
+    │       ├── BtnSlider.js
+    │       └── PosterSlider.js
+    ├── contexts
+    │   ├── favoriteGameList.js
+    │   ├── filteredGames.js
+    │   ├── isLoading.js
+    │   ├── isSearchedHitted.js
+    │   ├── searchTermGame.js
+    │   └── selectedCategory.js
+    ├── customHooks
+    │   └── useFetchApi.js
+    ├── icons
+    │   ├── heartRegular.svg
+    │   └── heartSolid.svg
+    ├── index.css
+    ├── index.js
+    ├── reportWebVitals.js
+    ├── setupTests.js
+    └── utilities
+        └── gamesFilterById.js
+```
 
 
 ## :electric_plug:6.HOW TO INSTALL:
