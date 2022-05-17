@@ -4,15 +4,13 @@ import Games from './games';
 import Footer from './footer';
 import ScrollToUP from './ScrollToTop';
 import { SelectedCategory } from '../contexts/selectedCategory';
-import { SearchTermGame } from '../contexts/searchTermGame';
 import { FilteredGamesList } from '../contexts/filteredGames';
 import { IsSearchedContext } from '../contexts/isSearchedHitted';
 import SearchedGames from './searchedGames';
 
 function HomePage() {
-  const { searchTerm, setSearchTerm } = useContext(SearchTermGame);
-  const { filteredGames, setFilteredGames } = useContext(FilteredGamesList);
-  const { isSearched, setIsSearched } = useContext(IsSearchedContext);
+  const { filteredGames } = useContext(FilteredGamesList);
+  const { isSearched } = useContext(IsSearchedContext);
 
   const allGamesApiParams = {};
   const socialGamesApiParams = { category: 'Social' };

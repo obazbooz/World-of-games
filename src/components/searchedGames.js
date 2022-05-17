@@ -1,7 +1,5 @@
-import { useContext } from 'react';
+import React from 'react';
 import Game from './game';
-import useFetchApi from '../customHooks/useFetchApi';
-import { SelectedCategory } from '../contexts/selectedCategory';
 import SearchBar from './searchBar';
 
 function SearchedGames({ filteredGames }) {
@@ -13,7 +11,7 @@ function SearchedGames({ filteredGames }) {
         </div>
         <SearchBar />
       </div>
-      {filteredGames.length == 0 ? (
+      {filteredGames.length === 0 ? (
         <p>No games found with the searched text try again!</p>
       ) : (
         <ul className="gamesContainer">

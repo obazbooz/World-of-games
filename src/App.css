@@ -148,16 +148,19 @@ body {
 }
 
 .gamesHeaderContainer h2 {
-  font-size: x-large;
 }
 
+.searchFormContainer input {
+  font-size: 10px;
+}
 .searchFormContainer {
   overflow: hidden;
   margin: 0;
 }
 
 .game {
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 
 .gameItem {
@@ -166,7 +169,6 @@ body {
   margin: 0 10px 20px;
   padding: 15px;
   text-align: justify;
-  width: 95%;
   min-height: 230px;
 }
 
@@ -427,4 +429,57 @@ body {
 .toUpNotVisible {
   opacity: 0;
   transition: 1s;
+}
+
+/*************/
+
+@media screen and (max-width: 875px) {
+}
+
+@media screen and (max-width: 500px) {
+}
+
+@media screen and (max-width: 390px) {
+  .headerTitleContainer {
+    font-size: 18px;
+  }
+
+  .selectedCategoryTitle {
+    font-size: 13px;
+  }
+
+  #gamePoster {
+    width: 100%;
+    float: none;
+  }
+
+  #gameTitle {
+    font-size: 12px;
+  }
+  .likeIcon {
+    width: 10px;
+  }
+  .gameReleaseYear {
+    font-size: 5px;
+  }
+
+  .gamePublisher {
+    font-size: 10px;
+  }
+
+  .gameShortDesc {
+    font-size: 10px;
+  }
+
+  .footerInfoListContainer li a {
+    font-size: 6px;
+  }
+  .copyRights p {
+    font-size: 10px;
+  }
+
+  .toUpBtn {
+    font-weight: 200;
+    right: 10px;
+  }
 }
