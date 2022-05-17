@@ -3,7 +3,7 @@
 </h1>
 
 
-<h2>1. Application demo:</h2>
+<h2>:tv: 1. Application demo:</h2>
 
 <h2>:bookmark_tabs: 2. Application descreption:</h2>
 
