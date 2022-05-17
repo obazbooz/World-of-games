@@ -40,7 +40,7 @@ body {
     url(//oceanofgames.com/wp-content/themes/mystique/css/../images/bg-nav.png)
     repeat-x center top;
   border-top: 1px solid #fff;
-  width: 60%;
+  width: 70%;
   margin: 20px auto;
   /* min-height: 55px; */
 }
@@ -118,7 +118,7 @@ body {
     no-repeat right top;
   min-height: 300px;
   position: relative;
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
@@ -353,7 +353,7 @@ body {
 
 /***************Footer styling ***********/
 .footerContainer {
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
