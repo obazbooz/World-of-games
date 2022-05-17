@@ -42,8 +42,6 @@
 ## :shipit:7.CREATED BY:
 * @Osama Bazbooz
 
-## heavy_check_mark:8.LICENSE:
-* Copyright © 2022
-
+# Enjoy it, :heart_eyes: :gift_heart:
 
 
