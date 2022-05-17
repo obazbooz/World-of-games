@@ -95,7 +95,7 @@
 
 
 ## :electric_plug:6.HOW TO INSTALL:
-1. Clone the repostory: git@github.com:obazbooz/World-of-games.git
+1. Clone the repostory: ``` git@github.com:obazbooz/World-of-games.git ```
 2. Install the npm modules: npm install
 3. Start the application: npm start
 
