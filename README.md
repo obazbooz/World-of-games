@@ -105,7 +105,7 @@
 * It's a clon of a website called Ocean of games.
 * Check it out http://oceanofgames.com/
 
-## :shipit:7.CREATED BY:
+## :shipit:8.CREATED BY:
 * @Osama Bazbooz
 
 # Enjoy it, :heart_eyes: :gift_heart:
