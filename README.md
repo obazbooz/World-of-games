@@ -10,18 +10,18 @@
  * https://www.mmobomb.com/api
 
 <h2>:bookmark_tabs:  3.APPLICATION DESCRIPTION:</h2>
- * Wrold of games is a simple react application helps you to search for games throuth out an ocean of games.
- * This application helps you to get to know more information about a big variety of games.
- * In addition to that, you can find a direct downloading link to each game.
+ ##Wrold of games is a simple react application helps you to search for games throuth out an ocean of games.
+ ##This application helps you to get to know more information about a big variety of games.
+ ##In addition to that, you can find a direct downloading link to each game.
 
 
 
 <h2>:deciduous_tree:  4.DIRECTORY TREE:</h2>
- * You can filter the games that you want based on the games categories such shooting games , card games etc..  
- * You can also filter the games based on the playing platform.
- * You can directly search for the requested game by typing the game title in the search field
- * World of games can provide you with a detaild information about every game and also a  direct download link to the game.
- * When ever you find your favorite games you can hit the like button to add the game to your favorite list, so no need to search again for you favorites games.
+ ##You can filter the games that you want based on the games categories such shooting games , card games etc..  
+ ##You can also filter the games based on the playing platform.
+ ##You can directly search for the requested game by typing the game title in the search field
+ ##World of games can provide you with a detaild information about every game and also a  direct download link to the game.
+ ##When ever you find your favorite games you can hit the like button to add the game to your favorite list, so no need to search again for you favorites games.
 
 <h2>:electric_plug:  5.HOW TO INSTALL:</h2>
 
