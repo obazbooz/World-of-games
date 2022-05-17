@@ -6,7 +6,7 @@ import { IsSearchedContext } from '../contexts/isSearchedHitted';
 function NavigationBar() {
   const { selectedCategory, setSelectedCategory } =
     useContext(SelectedCategory);
-  const { isSearched, setIsSearched } = useContext(IsSearchedContext);
+  const { setIsSearched } = useContext(IsSearchedContext);
   return (
     <nav className="navigationContainer">
       <ul className="navListContainer">
@@ -17,7 +17,7 @@ function NavigationBar() {
                 ? 'selectedCategoryStyle'
                 : 'unselectedCategoryStyle'
             }`}
-            to={'/home'}
+            to={'/'}
             onClick={() => {
               setSelectedCategory('All');
               setIsSearched(false);
@@ -34,7 +34,7 @@ function NavigationBar() {
                 ? 'selectedCategoryStyle'
                 : 'unselectedCategoryStyle'
             }`}
-            to={'/home'}
+            to={'/'}
             onClick={() => {
               setSelectedCategory('Social');
               setIsSearched(false);
@@ -50,7 +50,7 @@ function NavigationBar() {
                 ? 'selectedCategoryStyle'
                 : 'unselectedCategoryStyle'
             }`}
-            to={'/home'}
+            to={'/'}
             onClick={() => {
               setSelectedCategory('Card');
               setIsSearched(false);
@@ -66,7 +66,7 @@ function NavigationBar() {
                 ? 'selectedCategoryStyle'
                 : 'unselectedCategoryStyle'
             }`}
-            to={'/home'}
+            to={'/'}
             onClick={() => {
               setSelectedCategory('Shooter');
               setIsSearched(false);
@@ -82,7 +82,7 @@ function NavigationBar() {
                 ? 'selectedCategoryStyle'
                 : 'unselectedCategoryStyle'
             }`}
-            to={'/home'}
+            to={'/'}
             onClick={() => {
               setSelectedCategory('Fighting');
               setIsSearched(false);
@@ -98,7 +98,7 @@ function NavigationBar() {
                 ? 'selectedCategoryStyle'
                 : 'unselectedCategoryStyle'
             }`}
-            to={'/home'}
+            to={'/'}
             onClick={() => {
               setSelectedCategory('Strategy');
               setIsSearched(false);
@@ -114,7 +114,7 @@ function NavigationBar() {
                 ? 'selectedCategoryStyle'
                 : 'unselectedCategoryStyle'
             }`}
-            to={'/home'}
+            to={'/'}
             onClick={() => {
               setSelectedCategory('Racing');
               setIsSearched(false);
@@ -130,7 +130,7 @@ function NavigationBar() {
                 ? 'selectedCategoryStyle'
                 : 'unselectedCategoryStyle'
             }`}
-            to={'/home'}
+            to={'/'}
             onClick={() => {
               setSelectedCategory('Sports');
               setIsSearched(false);
@@ -146,7 +146,7 @@ function NavigationBar() {
                 ? 'selectedCategoryStyle'
                 : 'unselectedCategoryStyle'
             }`}
-            to={'/home'}
+            to={'/'}
             onClick={() => {
               setSelectedCategory('Fantasy');
               setIsSearched(false);
@@ -162,7 +162,7 @@ function NavigationBar() {
                 ? 'selectedCategoryStyle'
                 : 'unselectedCategoryStyle'
             }`}
-            to={'/home'}
+            to={'/'}
             onClick={() => {
               setSelectedCategory('Action');
               setIsSearched(false);
@@ -178,7 +178,7 @@ function NavigationBar() {
                 ? 'selectedCategoryStyle'
                 : 'unselectedCategoryStyle'
             }`}
-            to={'/home'}
+            to={'/'}
             onClick={() => {
               setSelectedCategory('PC');
               setIsSearched(false);
@@ -194,7 +194,7 @@ function NavigationBar() {
                 ? 'selectedCategoryStyle'
                 : 'unselectedCategoryStyle'
             }`}
-            to={'/home'}
+            to={'/'}
             onClick={() => {
               setSelectedCategory('Browser');
               setIsSearched(false);
