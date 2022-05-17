@@ -26,7 +26,10 @@
 ## :deciduous_tree:4.DIRECTORY TREE:
 
 
-<h2>:electric_plug:  5.HOW TO INSTALL:</h2>
+## :electric_plug:5.HOW TO INSTALL:
+1- Clone the repostory: git@github.com:obazbooz/World-of-games.git
+2- Install the npm modules: npm install
+3- Start the application: npm start
 
 
 <h2>:shipit:  6.CREATED BY:</h2>
