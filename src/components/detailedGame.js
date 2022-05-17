@@ -4,25 +4,49 @@ import PosterSlider from './PosterSlider';
 function DetailedGame({ detailedGameDate }) {
   return (
     <div className="gameContainer">
-      <PosterSlider detailedGameDate={detailedGameDate} />;
-      <img
-        id="detailedGamePoster"
-        src={detailedGameDate.thumbnail}
-        alt={'Game poster is not available'}
-      />
-      <p>{detailedGameDate.description}</p>
-      <p>{detailedGameDate.genre}</p>
-      <p>{detailedGameDate.platform}</p>
-      <p>{detailedGameDate.developer}</p>
-      <p>{detailedGameDate.publisher}</p>
-      <p>{detailedGameDate.release_date}</p>
-      <p>{detailedGameDate.game_url}</p>
-      {/* <p>{detailedGameDate.minimum_system_requirements.os}</p> */}
-      {/* <h4>minimum system requirements</h4>
-      <p>{processor}</p>
-      <p>{memory}</p>
-      <p>{graphics}</p>
-      <p>{storage}</p> */}
+      <h1>{detailedGameDate.title}</h1>
+      <div className="posterSliderContainer">
+        <PosterSlider detailedGameDate={detailedGameDate} />
+      </div>
+      <div className="gameDetailsContainer">
+        <div className="gameDetailsInfo">
+          <h3>Games information</h3>
+          <p>
+            Game platform: <span>{detailedGameDate.platform}</span>
+          </p>
+          <p>
+            Game developer: <span>{detailedGameDate.developer}</span>
+          </p>
+          <p>
+            Game publisher: <span>{detailedGameDate.publisher}</span>
+          </p>
+          <p>
+            Game release date: <span>{detailedGameDate.release_date}</span>
+          </p>
+          <p>
+            Game description: <span> {detailedGameDate.short_description}</span>
+          </p>
+          <p>
+            <span>
+              <a href={detailedGameDate.game_url}> Download link</a>
+            </span>
+          </p>
+        </div>
+        <div className="gameDetailsSysReq">
+          <h3>Minimum system requirements</h3>
+          {detailedGameDate.screenshots !== undefined ? (
+            <div>
+              <p>{detailedGameDate.minimum_system_requirements.os}</p>
+              <p>{detailedGameDate.minimum_system_requirements.processor}</p>
+              <p>{detailedGameDate.minimum_system_requirements.memory}</p>
+              <p>{detailedGameDate.minimum_system_requirements.graphics}</p>
+              <p>{detailedGameDate.minimum_system_requirements.storage}</p>
+            </div>
+          ) : (
+            <></>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
