@@ -34,6 +34,11 @@
 3. Start the application: npm start
 
 
+## :paw_prints:7.FYI:
+* This application has been built for studying porpuses.
+* It's a clon of a website called Ocean of games.
+* Check it out http://oceanofgames.com/
+
 ## :shipit:7.CREATED BY:
 * @Osama Bazbooz
 
