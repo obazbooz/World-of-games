@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
-import { FavoriteGamesList } from '../contexts/favoriteGameList';
-import useFetchApi from '../customHooks/useFetchApi';
-import gamesFilterById from '../utilities/gamesFilterById';
-import Header from './header';
-import Game from './game';
-import Footer from './footer';
+import { FavoriteGamesList } from '../../contexts/favoriteGameList';
+import useFetchApi from '../../customHooks/useFetchApi';
+import gamesFilterById from '../../utilities/gamesFilterById';
+import Header from '../headers/Header';
+import Game from '../games/Game';
+import Footer from '../footers/Footer';
+import { LoadingContext } from '../../contexts/isLoading';
 
 function FavoriteGames() {
   const { favorite } = useContext(FavoriteGamesList);
@@ -12,13 +13,22 @@ function FavoriteGames() {
   const apiUrlParams = {};
   const allGames = useFetchApi(gamesApiUrl, apiUrlParams);
   const favoriteProductData = gamesFilterById(allGames, favorite);
+  const { isLoading, isFail } = useContext(LoadingContext);
   return (
     <div>
       <Header />
       <div className="gameContainer">
         {favorite.length === 0 ? (
           <div>
-            <p id="noFavoriteItems">No games in the favorites list yet.</p>
+            <p className="noResults">No games in the favorites list yet.</p>
+          </div>
+        ) : isLoading && !isFail ? (
+          <div className="gamesBodyContainer">
+            <img
+              className="loadingImg"
+              src="/isLoading.gif"
+              alt="Loading icon is not available!"
+            />
           </div>
         ) : (
           <div>

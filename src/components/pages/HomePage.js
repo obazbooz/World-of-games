@@ -1,19 +1,16 @@
 import React, { useContext } from 'react';
-import Header from './header';
-import Games from './games';
-import Footer from './footer';
-import ScrollToUP from './ScrollToTop';
-import { SelectedCategory } from '../contexts/selectedCategory';
-import { SearchTermGame } from '../contexts/searchTermGame';
-import { FilteredGamesList } from '../contexts/filteredGames';
-import { IsSearchedContext } from '../contexts/isSearchedHitted';
-import SearchedGames from './searchedGames';
+import Header from '../headers/Header';
+import Games from '../games/Games';
+import Footer from '../footers/Footer';
+import ScrollToUP from '../games/ScrollToTop';
+import { SelectedCategory } from '../../contexts/selectedCategory';
+import { FilteredGamesList } from '../../contexts/filteredGames';
+import { IsSearchedContext } from '../../contexts/isSearchedHitted';
+import SearchedGames from '../games/SearchedGames';
 
 function HomePage() {
-  const { searchTerm, setSearchTerm } = useContext(SearchTermGame);
-  const { filteredGames, setFilteredGames } = useContext(FilteredGamesList);
-  const { isSearched, setIsSearched } = useContext(IsSearchedContext);
-
+  const { filteredGames } = useContext(FilteredGamesList);
+  const { isSearched } = useContext(IsSearchedContext);
   const allGamesApiParams = {};
   const socialGamesApiParams = { category: 'Social' };
   const cardGamesApiParams = { category: 'card' };
@@ -27,6 +24,7 @@ function HomePage() {
   const pcGamesApiParams = { platform: 'pc' };
   const browserGamesApiParams = { platform: 'browser' };
   const { selectedCategory } = useContext(SelectedCategory);
+
   return (
     <div>
       <Header />

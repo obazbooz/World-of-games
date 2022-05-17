@@ -1,11 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { LoadingContext } from '../contexts/isLoading';
 
 const useFetchApi = (url, apiUrlParams) => {
   const [data, setData] = useState([]);
+  const { setIsLoading, setIsFail } = useContext(LoadingContext);
   const requestedApiEndpoint = url + '?' + new URLSearchParams(apiUrlParams);
   useEffect(() => {
     (async () => {
       try {
+        setIsLoading(true);
         const fetchApi = await fetch(requestedApiEndpoint, {
           method: 'GET',
           headers: {
@@ -16,11 +19,14 @@ const useFetchApi = (url, apiUrlParams) => {
         });
         const fetchedData = await fetchApi.json();
         setData(fetchedData);
+        setIsLoading(false);
+        setIsFail(false);
       } catch (error) {
+        setIsFail(true);
         console.log(error);
       }
     })();
-  }, [requestedApiEndpoint]);
+  }, [requestedApiEndpoint, setIsFail, setIsLoading]);
 
   return data;
 };

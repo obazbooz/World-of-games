@@ -1,5 +1,5 @@
 import React from 'react';
-import PosterSlider from './PosterSlider';
+import PosterSlider from '../sliders/PosterSlider';
 
 function DetailedGame({ detailedGameDate }) {
   return (

@@ -1,5 +1,5 @@
-import MainTitle from './mainTitle';
-import NavigationBar from './navigationBar';
+import MainTitle from './MainTitle';
+import NavigationBar from './NavigationBar';
 function Header() {
   return (
     <div>

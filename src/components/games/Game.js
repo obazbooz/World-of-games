@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import { FavoriteGamesList } from '../contexts/favoriteGameList';
+import { FavoriteGamesList } from '../../contexts/favoriteGameList';
 import { Link } from 'react-router-dom';
-import heartRegular from '../icons/heartRegular.svg';
-import heartSolid from '../icons/heartSolid.svg';
+import heartRegular from '../../icons/heartRegular.svg';
+import heartSolid from '../../icons/heartSolid.svg';
 
 function Game({
   game: { id, title, thumbnail, short_description, release_date, publisher },

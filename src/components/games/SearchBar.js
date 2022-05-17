@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
-import useFetchApi from '../customHooks/useFetchApi';
-import { SearchTermGame } from '../contexts/searchTermGame';
-import { FilteredGamesList } from '../contexts/filteredGames';
-import { IsSearchedContext } from '../contexts/isSearchedHitted';
+import useFetchApi from '../../customHooks/useFetchApi';
+import { SearchTermGame } from '../../contexts/searchTermGame';
+import { FilteredGamesList } from '../../contexts/filteredGames';
+import { IsSearchedContext } from '../../contexts/isSearchedHitted';
 
 function SearchBar() {
   const { searchTerm, setSearchTerm } = useContext(SearchTermGame);
-  const { filteredGames, setFilteredGames } = useContext(FilteredGamesList);
-  const { isSearched, setIsSearched } = useContext(IsSearchedContext);
+  const { setFilteredGames } = useContext(FilteredGamesList);
+  const { setIsSearched } = useContext(IsSearchedContext);
   const params = {};
   const gamesApiUrl = 'https://mmo-games.p.rapidapi.com/games';
   const allGames = useFetchApi(gamesApiUrl, params);

@@ -4,7 +4,6 @@
 }
 
 body {
-  /* background-image: url(../public/images/background.jpg); */
   background-image: url('http://oceanofgames.com/wp-content/uploads/2013/08/alabg_7.jpg');
   background-position-x: center;
   background-repeat: no-repeat;
@@ -20,7 +19,7 @@ body {
   text-align: center;
 }
 
-/***************Header styling ***********/
+/*********************Header queries***********************/
 
 .headerTitleContainer {
   margin: 50px;
@@ -42,7 +41,6 @@ body {
   border-top: 1px solid #fff;
   width: 70%;
   margin: 20px auto;
-  /* min-height: 55px; */
 }
 
 .navListContainer {
@@ -108,7 +106,7 @@ body {
   background-color: #dfdfdf;
   color: #4e4e4e;
 }
-/***************Body styling ***********/
+/*********************Body styling***********************/
 
 .gameContainer {
   min-height: 300px;
@@ -147,10 +145,9 @@ body {
   letter-spacing: -1px;
 }
 
-.gamesHeaderContainer h2 {
-  font-size: x-large;
+.searchFormContainer input {
+  font-size: 10px;
 }
-
 .searchFormContainer {
   overflow: hidden;
   margin: 0;
@@ -158,6 +155,7 @@ body {
 
 .game {
   width: 100%;
+  margin: auto;
 }
 
 .gameItem {
@@ -166,13 +164,13 @@ body {
   margin: 0 10px 20px;
   padding: 15px;
   text-align: justify;
-  width: 95%;
   min-height: 230px;
 }
 
 #gamePoster {
   float: left;
   margin-right: 10px;
+  margin-bottom: 20px;
   width: 400px;
 }
 
@@ -250,9 +248,10 @@ body {
   margin: 0;
   padding: 0;
   text-align: justify;
+  font-size: 13px;
 }
 
-#noFavoriteItems {
+.noResults {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -292,7 +291,6 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/********/
 .posterSliderContainer {
   max-width: 700px;
   height: 300px;
@@ -308,7 +306,6 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  /* opacity: 0; */
   transition: opacity ease-in-out 0.4s;
 }
 
@@ -343,15 +340,50 @@ body {
 .nextPosterBtn {
   top: 50%;
   right: 20px;
+  opacity: 0.6;
   transform: translateY(-60%);
 }
 .prevPosterBtn {
   top: 50%;
   left: 20px;
+  opacity: 0.6;
   transform: translateY(-60%);
 }
 
-/***************Footer styling ***********/
+.toUpBtn {
+  font-weight: 700;
+  position: fixed;
+  bottom: 0px;
+  right: 5%;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+}
+
+.toUpBtn:hover {
+  color: #2d8ac7;
+}
+
+.toUpVisible {
+  opacity: 1;
+  transition: 1s;
+}
+
+.toUpNotVisible {
+  opacity: 0;
+  transition: 1s;
+}
+
+.loadingImg {
+  text-align: center;
+  margin: auto;
+  width: 200px;
+}
+
+/*********************Footer styling***********************/
+
 .footerContainer {
   width: 70%;
   margin: auto;
@@ -375,7 +407,7 @@ body {
 
 .footerInfoListContainer li a {
   color: #666;
-  font-size: 85%;
+  font-size: 17px;
   font-weight: 700;
   padding: 4px 10px;
   -moz-border-radius: 20px;
@@ -401,30 +433,127 @@ body {
   text-shadow: 0px 1px 1px #fff;
 }
 
-/**********************************/
+/*********************Media queries***********************/
 
-.toUpBtn {
-  font-weight: 700;
-  position: fixed;
-  bottom: 0px;
-  right: 40px;
-  border: none;
-  cursor: pointer;
-  height: 30px;
-  border-top-left-radius: 30%;
-  border-top-right-radius: 30%;
+@media screen and (max-width: 950px) {
+  .headerTitleContainer {
+    font-size: 25px;
+  }
+
+  .selectedCategoryTitle {
+    font-size: 20px;
+  }
+
+  #gamePoster {
+    width: 100%;
+    float: none;
+  }
+
+  #gameTitle {
+    font-size: 15px;
+  }
+  .likeIcon {
+    width: 15px;
+  }
+  .gameReleaseYear {
+    font-size: 15px;
+  }
+
+  .gamePublisher {
+    font-size: 15px;
+  }
+
+  .gameShortDesc {
+    font-size: 20px;
+  }
+
+  .footerInfoListContainer li a {
+    font-size: 10px;
+  }
+  .copyRights p {
+    font-size: 10px;
+  }
+
+  .toUpBtn {
+    font-weight: 200;
+    right: 3%;
+  }
+  .footerInfoListContainer li {
+    margin-left: 5px;
+    padding: 5px 0;
+  }
+
+  .footerInfoListContainer li a {
+    font-size: 10px;
+    font-weight: 800;
+    padding: 1px 3px;
+  }
+
+  .copyRights {
+    padding: 1px 0;
+    font-size: 10px;
+  }
 }
 
-.toUpBtn:hover {
-  color: #2d8ac7;
-}
+@media screen and (max-width: 590px) {
+  .headerTitleContainer {
+    font-size: 18px;
+  }
 
-.toUpVisible {
-  opacity: 1;
-  transition: 1s;
-}
+  .selectedCategoryTitle {
+    font-size: 13px;
+  }
 
-.toUpNotVisible {
-  opacity: 0;
-  transition: 1s;
+  #gamePoster {
+    width: 100%;
+    float: none;
+  }
+
+  #gameTitle {
+    font-size: 12px;
+  }
+  .likeIcon {
+    width: 10px;
+  }
+  .gameReleaseYear {
+    font-size: 5px;
+  }
+
+  .gamePublisher {
+    font-size: 10px;
+  }
+
+  .gameShortDesc {
+    font-size: 10px;
+  }
+
+  .footerInfoListContainer li a {
+    font-size: 6px;
+  }
+  .copyRights p {
+    font-size: 10px;
+  }
+
+  .toUpBtn {
+    font-weight: 100;
+    font-size: 5px;
+    right: 2%;
+    width: 30px;
+  }
+
+  .footerInfoListContainer li {
+    margin-left: 3px;
+    padding: 3px 0;
+  }
+
+  .footerInfoListContainer li a {
+    font-size: 9px;
+    font-weight: 600;
+    padding: 1px 3px;
+  }
+
+  .copyRights {
+    padding: 1px 0;
+    font-size: 5px;
+  }
 }

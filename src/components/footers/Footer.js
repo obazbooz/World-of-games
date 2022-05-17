@@ -1,5 +1,5 @@
-import FooterInfo from "./footerInfo";
-import FooterCopyright from "./footerCopyright";
+import FooterInfo from './FooterInfo';
+import FooterCopyright from './FooterCopyright';
 function Footer() {
   return (
     <div className="footerContainer">

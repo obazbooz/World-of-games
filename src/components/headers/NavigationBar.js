@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { SelectedCategory } from '../contexts/selectedCategory';
-import { IsSearchedContext } from '../contexts/isSearchedHitted';
+import { SelectedCategory } from '../../contexts/selectedCategory';
+import { IsSearchedContext } from '../../contexts/isSearchedHitted';
 
 function NavigationBar() {
   const { selectedCategory, setSelectedCategory } =
