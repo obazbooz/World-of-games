@@ -1,5 +1,5 @@
 <h1 align="center">
-  :video_game:Welcome to World of games APP:video_game:
+  :video_game:Welcome to the World of games React application:video_game:
 </h1>
 
 
