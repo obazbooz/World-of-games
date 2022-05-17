@@ -10,37 +10,54 @@ function DetailedGame({ detailedGameDate }) {
       </div>
       <div className="gameDetailsContainer">
         <div className="gameDetailsInfo">
-          <h3>Games information</h3>
-          <p>
-            Game platform: <span>{detailedGameDate.platform}</span>
+          <h2 className="infoHeader">Games information</h2>
+          <p className="infoTitle">
+            Game platform:
+            <span className="information">{detailedGameDate.platform}</span>
           </p>
-          <p>
-            Game developer: <span>{detailedGameDate.developer}</span>
+          <p className="infoTitle">
+            Game developer:
+            <span className="information">{detailedGameDate.developer}</span>
           </p>
-          <p>
-            Game publisher: <span>{detailedGameDate.publisher}</span>
+          <p className="infoTitle">
+            Game publisher:
+            <span className="information">{detailedGameDate.publisher}</span>
           </p>
-          <p>
-            Game release date: <span>{detailedGameDate.release_date}</span>
+          <p className="infoTitle">
+            Game release date:
+            <span className="information">{detailedGameDate.release_date}</span>
           </p>
-          <p>
-            Game description: <span> {detailedGameDate.short_description}</span>
+          <p className="infoTitle">
+            Game description:
+            <span className="information">
+              {detailedGameDate.short_description}
+            </span>
           </p>
-          <p>
+          <p className="infoTitle">
             <span>
               <a href={detailedGameDate.game_url}> Download link</a>
             </span>
           </p>
         </div>
         <div className="gameDetailsSysReq">
-          <h3>Minimum system requirements</h3>
+          <h2 className="infoHeader">Minimum system requirements</h2>
           {detailedGameDate.screenshots !== undefined ? (
             <div>
-              <p>{detailedGameDate.minimum_system_requirements.os}</p>
-              <p>{detailedGameDate.minimum_system_requirements.processor}</p>
-              <p>{detailedGameDate.minimum_system_requirements.memory}</p>
-              <p>{detailedGameDate.minimum_system_requirements.graphics}</p>
-              <p>{detailedGameDate.minimum_system_requirements.storage}</p>
+              <p className="information">
+                {detailedGameDate.minimum_system_requirements.os}
+              </p>
+              <p className="information">
+                {detailedGameDate.minimum_system_requirements.processor}
+              </p>
+              <p className="information">
+                {detailedGameDate.minimum_system_requirements.memory}
+              </p>
+              <p className="information">
+                {detailedGameDate.minimum_system_requirements.graphics}
+              </p>
+              <p className="information">
+                {detailedGameDate.minimum_system_requirements.storage}
+              </p>
             </div>
           ) : (
             <></>

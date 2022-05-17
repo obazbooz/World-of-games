@@ -271,6 +271,7 @@ body {
 
 .gameDetailsInfo {
   width: 40%;
+  padding: 15px;
   align-self: start;
   max-width: 700px;
   min-height: 300px;
@@ -315,12 +316,33 @@ body {
   object-fit: cover;
 }
 
+.gameDetailsInfo {
+  padding: 10px;
+}
+
+.infoHeader {
+  font-weight: 700;
+}
+
+.infoTitle {
+  color: #2d8ac7;
+  font-weight: 700;
+}
+
+.information {
+  color: black;
+  font-weight: 200;
+  margin-left: 5px;
+}
+
 .posterActive {
   position: absolute;
   left: 0;
   top: 0;
   opacity: 1;
+  transition: opacity 2s ease-out;
 }
+
 .posterDeactivate {
   opacity: 0;
 }
@@ -467,6 +489,23 @@ body {
     font-size: 20px;
   }
 
+  .infoHeader {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .infoTitle {
+    color: #2d8ac7;
+    font-weight: 500;
+  }
+
+  .information {
+    color: black;
+    font-weight: 200;
+    margin-left: 5px;
+    font-size: 15px;
+  }
+
   .footerInfoListContainer li a {
     font-size: 10px;
   }
@@ -525,6 +564,23 @@ body {
 
   .gameShortDesc {
     font-size: 10px;
+  }
+
+  .infoHeader {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .infoTitle {
+    color: #2d8ac7;
+    font-weight: 300;
+  }
+
+  .information {
+    color: black;
+    font-weight: 200;
+    margin-left: 5px;
+    font-size: 9px;
   }
 
   .footerInfoListContainer li a {

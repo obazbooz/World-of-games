@@ -23,12 +23,12 @@ function PosterSlider({ detailedGameDate: { screenshots } }) {
         screenshots.map((shot, index) => {
           return (
             <div
+              key={index}
               className={
                 posterIndex === index + 1 ? 'posterActive' : 'posterDeactivate'
               }
             >
               <img
-                key={index}
                 id="detailedGamePosterImg"
                 src={shot.image}
                 alt={'Game poster is not available'}
