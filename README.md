@@ -3,9 +3,9 @@
 </h1>
 
 
-<h2>:tv: 1. Application demo:</h2>
+<h2>:tv: 1. Demo:</h2>
 
-<h2>:bookmark_tabs: 2. Application descreption:</h2>
+<h2>:bookmark_tabs: 2. Descreption:</h2>
 
   
   <p>By using this application you will be able to get a lot of information about many games such as 
