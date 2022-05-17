@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import useFetchApi from '../customHooks/useFetchApi';
-import { SearchTermGame } from '../contexts/searchTermGame';
-import { FilteredGamesList } from '../contexts/filteredGames';
-import { IsSearchedContext } from '../contexts/isSearchedHitted';
+import useFetchApi from '../../customHooks/useFetchApi';
+import { SearchTermGame } from '../../contexts/searchTermGame';
+import { FilteredGamesList } from '../../contexts/filteredGames';
+import { IsSearchedContext } from '../../contexts/isSearchedHitted';
 
 function SearchBar() {
   const { searchTerm, setSearchTerm } = useContext(SearchTermGame);

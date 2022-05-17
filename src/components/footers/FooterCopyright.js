@@ -2,7 +2,7 @@ function FooterCopyright() {
   return (
     <div className="footerCopyrightsContainer">
       <div className="copyRights">
-        <p>© Copyright 2022 Osama Bazbooz All Rights Reserved.</p>
+        <p>Created by Osama Bazbooz 2022.</p>
       </div>
     </div>
   );

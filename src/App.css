@@ -4,7 +4,6 @@
 }
 
 body {
-  /* background-image: url(../public/images/background.jpg); */
   background-image: url('http://oceanofgames.com/wp-content/uploads/2013/08/alabg_7.jpg');
   background-position-x: center;
   background-repeat: no-repeat;
@@ -20,7 +19,7 @@ body {
   text-align: center;
 }
 
-/***************Header styling ***********/
+/*********************Header queries***********************/
 
 .headerTitleContainer {
   margin: 50px;
@@ -42,7 +41,6 @@ body {
   border-top: 1px solid #fff;
   width: 70%;
   margin: 20px auto;
-  /* min-height: 55px; */
 }
 
 .navListContainer {
@@ -108,7 +106,7 @@ body {
   background-color: #dfdfdf;
   color: #4e4e4e;
 }
-/***************Body styling ***********/
+/*********************Body styling***********************/
 
 .gameContainer {
   min-height: 300px;
@@ -145,9 +143,6 @@ body {
   text-shadow: #fff 1px 1px 1px;
   line-height: 100%;
   letter-spacing: -1px;
-}
-
-.gamesHeaderContainer h2 {
 }
 
 .searchFormContainer input {
@@ -256,7 +251,7 @@ body {
   font-size: 13px;
 }
 
-#noFavoriteItems {
+.noResults {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -296,7 +291,6 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/********/
 .posterSliderContainer {
   max-width: 700px;
   height: 300px;
@@ -312,7 +306,6 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  /* opacity: 0; */
   transition: opacity ease-in-out 0.4s;
 }
 
@@ -347,65 +340,15 @@ body {
 .nextPosterBtn {
   top: 50%;
   right: 20px;
+  opacity: 0.6;
   transform: translateY(-60%);
 }
 .prevPosterBtn {
   top: 50%;
   left: 20px;
+  opacity: 0.6;
   transform: translateY(-60%);
 }
-
-/***************Footer styling ***********/
-.footerContainer {
-  width: 70%;
-  margin: auto;
-}
-
-.footerInfoListContainer {
-  background: #eee;
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin: 0;
-}
-
-.footerInfoListContainer li {
-  margin-left: 10px;
-  padding: 10px 0;
-}
-
-.footerInfoListContainer li a {
-  color: #666;
-  font-size: 20px;
-  font-weight: 700;
-  padding: 4px 10px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  text-decoration: none;
-}
-
-.footerInfoListContainer li a:hover {
-  color: #2d8ac7;
-}
-
-.footerCopyrightsContainer {
-  background: #ddd;
-}
-
-.copyRights {
-  background: #cdcdcd;
-  padding: 1em 0;
-  font-size: 110%;
-  line-height: 150%;
-  text-align: center;
-  text-shadow: 0px 1px 1px #fff;
-}
-
-/**********************************/
 
 .toUpBtn {
   font-weight: 700;
@@ -433,7 +376,64 @@ body {
   transition: 1s;
 }
 
-/*************/
+.loadingImg {
+  text-align: center;
+  margin: auto;
+  width: 200px;
+}
+
+/*********************Footer styling***********************/
+
+.footerContainer {
+  width: 70%;
+  margin: auto;
+}
+
+.footerInfoListContainer {
+  background: #eee;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
+}
+
+.footerInfoListContainer li {
+  margin-left: 10px;
+  padding: 10px 0;
+}
+
+.footerInfoListContainer li a {
+  color: #666;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 4px 10px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.footerInfoListContainer li a:hover {
+  color: #2d8ac7;
+}
+
+.footerCopyrightsContainer {
+  background: #ddd;
+}
+
+.copyRights {
+  background: #cdcdcd;
+  padding: 1em 0;
+  font-size: 110%;
+  line-height: 150%;
+  text-align: center;
+  text-shadow: 0px 1px 1px #fff;
+}
+
+/*********************Media queries***********************/
 
 @media screen and (max-width: 950px) {
   .headerTitleContainer {
