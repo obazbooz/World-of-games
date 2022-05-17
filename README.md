@@ -4,7 +4,7 @@
 
 
 ## :tv:1.lIVE DEMO:
-* https://628380cd6162762ac1348365--verdant-lollipop-cf1a58.netlify.app/
+* https://statuesque-moxie-03638b.netlify.app/
 
 
 ## :link:2.USED API:
