@@ -15,7 +15,7 @@
 * In addition to that, you can find a direct downloading link to each game.
  
 
-## :electric_plug:3.HOW TO USE:
+## :electric_plug:4.HOW TO USE:
 * You can filter the games that you want based on the games categories such shooting games , card games etc..  
 * You can also filter the games based on the playing platform.
 * You can directly search for the requested game by typing the game title in the search field
@@ -23,21 +23,20 @@
 * When ever you find your favorite games you can hit the like button to add the game to your favorite list, so no need to search again for you favorites games.
 
 
-## :deciduous_tree:4.DIRECTORY TREE:
+## :deciduous_tree:5.DIRECTORY TREE:
 
 
-## :electric_plug:5.HOW TO INSTALL:
+## :electric_plug:6.HOW TO INSTALL:
 1. Clone the repostory: git@github.com:obazbooz/World-of-games.git
 2. Install the npm modules: npm install
 3. Start the application: npm start
 
 
-<h2>:shipit:  6.CREATED BY:</h2>
+## :shipit:7.CREATED BY:
+* @Osama Bazbooz
 
-<h2>:raising_hand:  7.CONTRIBUTING WITH ME:</h2>
+## heavy_check_mark:8.LICENSE:
+* Copyright © 2022
 
-<h2>:heavy_check_mark:  8.LICENSE:</h2>
-
-<h2>:sparkling_heart:  9.SUPPORT ME:</h2>
 
 
