@@ -3,13 +3,11 @@
 </h1>
 
 
-<h2>:tv:  1.lIVE DEMO:</h2>
-
- * https://628380cd6162762ac1348365--verdant-lollipop-cf1a58.netlify.app/
+#:tv:1.lIVE DEMO:
+* https://628380cd6162762ac1348365--verdant-lollipop-cf1a58.netlify.app/
  
-<h2>:link:  2.USED API:</h2>
-
- * https://www.mmobomb.com/api
+#:link:2.USED API:
+* https://www.mmobomb.com/api
  
 <h2>:bookmark_tabs:  3.APPLICATION DESCRIPTION:</h2>
 
