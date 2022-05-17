@@ -159,7 +159,7 @@ body {
 }
 
 .game {
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
@@ -175,6 +175,7 @@ body {
 #gamePoster {
   float: left;
   margin-right: 10px;
+  margin-bottom: 20px;
   width: 400px;
 }
 
@@ -252,6 +253,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: justify;
+  font-size: 13px;
 }
 
 #noFavoriteItems {
@@ -377,7 +379,7 @@ body {
 
 .footerInfoListContainer li a {
   color: #666;
-  font-size: 85%;
+  font-size: 20px;
   font-weight: 700;
   padding: 4px 10px;
   -moz-border-radius: 20px;
@@ -409,7 +411,7 @@ body {
   font-weight: 700;
   position: fixed;
   bottom: 0px;
-  right: 40px;
+  right: 5%;
   border: none;
   cursor: pointer;
   height: 30px;
@@ -433,13 +435,67 @@ body {
 
 /*************/
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 950px) {
+  .headerTitleContainer {
+    font-size: 25px;
+  }
+
+  .selectedCategoryTitle {
+    font-size: 20px;
+  }
+
+  #gamePoster {
+    width: 100%;
+    float: none;
+  }
+
+  #gameTitle {
+    font-size: 15px;
+  }
+  .likeIcon {
+    width: 15px;
+  }
+  .gameReleaseYear {
+    font-size: 15px;
+  }
+
+  .gamePublisher {
+    font-size: 15px;
+  }
+
+  .gameShortDesc {
+    font-size: 20px;
+  }
+
+  .footerInfoListContainer li a {
+    font-size: 10px;
+  }
+  .copyRights p {
+    font-size: 10px;
+  }
+
+  .toUpBtn {
+    font-weight: 200;
+    right: 3%;
+  }
+  .footerInfoListContainer li {
+    margin-left: 5px;
+    padding: 5px 0;
+  }
+
+  .footerInfoListContainer li a {
+    font-size: 10px;
+    font-weight: 800;
+    padding: 1px 3px;
+  }
+
+  .copyRights {
+    padding: 1px 0;
+    font-size: 10px;
+  }
 }
 
-@media screen and (max-width: 500px) {
-}
-
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 590px) {
   .headerTitleContainer {
     font-size: 18px;
   }
@@ -479,7 +535,25 @@ body {
   }
 
   .toUpBtn {
-    font-weight: 200;
-    right: 10px;
+    font-weight: 100;
+    font-size: 5px;
+    right: 2%;
+    width: 30px;
+  }
+
+  .footerInfoListContainer li {
+    margin-left: 3px;
+    padding: 3px 0;
+  }
+
+  .footerInfoListContainer li a {
+    font-size: 9px;
+    font-weight: 600;
+    padding: 1px 3px;
+  }
+
+  .copyRights {
+    padding: 1px 0;
+    font-size: 5px;
   }
 }
