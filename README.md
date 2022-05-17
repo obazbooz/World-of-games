@@ -4,7 +4,7 @@
 
 
 ## :tv:1.lIVE DEMO:
-* https://iridescent-valkyrie-7fe3a8.netlify.app/
+* [Click here(https://iridescent-valkyrie-7fe3a8.netlify.app/)]
 
 
 ## :link:2.USED API:
