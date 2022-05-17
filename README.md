@@ -5,13 +5,13 @@
 
 ## :tv:1.lIVE DEMO:
 * https://628380cd6162762ac1348365--verdant-lollipop-cf1a58.netlify.app/
-* ![Capture](https://user-images.githubusercontent.com/90429106/168819458-1de23ebe-6780-43df-9121-f7e05e435264.PNG)
 
 
 ## :link:2.USED API:
 * https://www.mmobomb.com/api
 
 ## :bookmark_tabs:3.APPLICATION DESCRIPTION:
+* ![Capture](https://user-images.githubusercontent.com/90429106/168819458-1de23ebe-6780-43df-9121-f7e05e435264.PNG)
 * Wrold of games is a simple react application helps you to search for games throuth out an ocean of games.
 * This application helps you to get to know more information about a big variety of games.
 * In addition to that, you can find a direct downloading link to each game.
