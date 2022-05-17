@@ -8,7 +8,7 @@
 
 
 ## :link:2.USED API:
-* [API](https://www.mmobomb.com/api)
+* [Games API](https://www.mmobomb.com/api)
 
 ## :bookmark_tabs:3.APPLICATION DESCRIPTION:
 * ![Capture](https://user-images.githubusercontent.com/90429106/168819458-1de23ebe-6780-43df-9121-f7e05e435264.PNG)
